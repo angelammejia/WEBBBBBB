@@ -1,0 +1,274 @@
+.o-body{
+    /* Fondo de la interfaz */
+    background-color: #f4f4f4;
+}
+.o-header{
+    /* Estilos del header */
+    min-width: 4rem;
+    box-shadow: 0px 0px 10px 2px #d1d1d1;
+    align-items: center;
+    padding: 0rem;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.o-logo{
+    /* clase del logo y sus estilos */
+    width: 70%;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+/* Estilos al topnav */
+.o-topnav a {
+    float: left;
+    display: flex;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.o-topnav a:after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	background-color: #9e0b0f;
+	width: 0;
+	left: 50%;
+	bottom: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  	transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.o-topnav a:hover {
+	color: #9e0b0f;
+}
+
+.o-topnav a:hover:after {
+	width: 100%;
+}
+
+.o-containerNav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* Estilos al topnav fin */
+
+/* Estilos a la foto de perfil */
+.o-imgProfile{
+    width: 10%;
+    height: 10%;
+}
+
+/* Estilos para botones del header */
+.o-headerButtons{
+    padding: 0rem;
+    justify-content: space-evenly;
+}
+
+/* Estilos al contenedor de la reserva  */
+.o-bodyContainerReserve{
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px #d1d1d1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 3rem auto;
+}
+
+/* Estilos al separador  */
+.o-hr{
+    border: 1px solid #9e0b0f;
+    width: 100%;
+    margin: 0em 0 2rem 0;
+}
+
+/* Estilos al título de la interfaz  */
+.o-title{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin: 1rem 0rem 2rem 0rem;
+    color: #000000;
+}
+.o-imgCard{
+    width: 100%;
+    height: 70%;
+    
+}
+
+/* Estilos al contenedor de los datePickers  */
+.o-card{
+    margin: 1rem 0rem;
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px #888888;
+    border-radius: 10px;
+    padding: 0rem 0rem 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.o-title2{
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin: 1rem 1rem 5rem 1rem;
+    color: #000000;
+}
+a, a:hover, a:active{
+    color: #000;
+    border-bottom: 1px;
+    outline: none;
+    box-shadow: none;
+}
+/* Estilos a la clase footer  */
+.o-footer{
+    min-width: 4rem;
+    box-shadow: 0px 0px 10px 2px #d1d1d1;
+    align-items: center;
+    padding: 0rem;
+    justify-content: space-between;
+    background-color: #000000;
+}
+/* Estilos al logo del footer  */
+.o-logoFooter{
+    width: 100%;
+    margin: 3rem 0rem 1rem 0rem;
+}
+/* Estilos al texto del footer  */
+.o-textFooter{
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size: .9rem;
+    margin: 3rem 0rem 3rem 0rem;
+    color: white;
+}
+/* Estilos al contenedor del footer  */
+.o-containerFooter{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* Estilos al contenedor de los combobox de las opciones de las salas  */
+.o-comboBox-options-reserve{
+    background: rgb(255, 255, 255);
+    border: 2px solid #665f602f;
+    margin: 1.3rem 0.1rem 0.5rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: #666666; 
+}
+/* Estilos al texto de los combobox de las opciones de las salas  */
+.o-label-labs{
+    font-family: 'Montserrat';
+    font-weight: 100px;
+    color: #666666;
+    font-size: 15px;
+    margin: 1.6rem;
+    padding: 0.2rem;
+}
+/* Estilos al contenedor de los combobox de las opciones de los equipos  */
+.o-comboBox-options-number{
+    background: rgb(255, 255, 255);
+    border: 2px solid #665f602f;
+    margin: 1.3rem 0.1rem 0.5rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: #666666;; 
+}
+/* Estilos al texto de los combobox de las opciones de los equipos  */
+.o-label-computers{
+    font-family: 'Montserrat';
+    font-weight: 100px;
+    color: #666666;
+    font-size: 15px;
+    margin: 1.6rem 0rem 0rem 0rem;
+    padding: 0.2rem;
+}
+/* Estilos a la imagen de la ubicación de equipos de X sala  */
+.o-reserve{
+    width: 44vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+/* Estilos al botón de reservar  */
+.o-buttonForm{
+    width: 88%;
+    margin: 1rem;
+    font-family: 'Montserrat';
+    background-color: #961a1d;
+    border-color: #961a1d;
+    outline: none;
+}
+.o-buttonForm:hover, .o-buttonForm:focus, .o-buttonForm:disabled, .o-buttonForm:not(:disabled):not(.disabled).active, .o-buttonForm:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color:black;
+    border-color: black;
+    outline: none;
+    box-shadow: none;
+}
+.o-label-date{
+    font-family: 'Montserrat';
+    font-weight: 100px;
+    color: #666666;
+    font-size: 15px;
+    margin: 1.6rem;
+    padding: 0.2rem;
+}
+/* Estilos al contenedor de los datePicker  */
+.o-form{
+    width: 70%;
+    flex-direction: row;
+}
+.o-dateGroup{
+    margin: 2rem 0rem 2rem 0rem;
+}
+.o-addon{
+    display: flex; 
+    align-items: center; 
+    border-bottom: 1px solid #961a1d; 
+    background-color:white;
+    width: 10%;
+}
+/* Estilos al ícono del datePicker  */
+.o-icondatePicker{
+    width: 50%;
+}
+/* Estilos al contenedor de los datePicker  */
+.o-formInput{
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid #961a1d;
+    outline: none;
+}
+.o-formFont{
+    font-family: 'Montserrat';
+    color: #666666;
+}
+/* Estilos a la clase que contiene a los datePicker  */
+.o-card-datePicker{   
+    margin: auto;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

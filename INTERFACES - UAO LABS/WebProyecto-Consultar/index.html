@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="resources/main.css" />
+</head>
+<body class= "o-body">
+    <!-- Empieza el codigo del navbar NO TOCAR -->
+    <div class = "row o-header o-topnav sticky-top navbar">
+        <div class="container o-containerNav">
+            <div class = "col-sm-3">
+                <img class = "o-logo" src="resources/logo.png" alt= "logo de la pagina">
+            </div>
+            <div class = "col-sm-6">
+                <div class="row o-headerButtons">    
+                        <a href="#portfolio">Inicio</a>
+                        <a href="#portfolio">Mis reservas</a> 
+                        <a href="#portfolio">Daniela Perea</a>
+                        <img class="o-imgProfile" src="resources/avataaars.png" alt="Foto de perfil del usuario">
+                </div>
+            </div>
+        </div>        
+    </div>
+    <!-- Termina el codigo del navbar NO TOCAR -->
+
+    
+    <div class="container o-bodyContainer"> 
+        <!-- Título de la interfaz utilizando una fila y un separador -->
+        <div class="row">         
+            <h2 class= "o-title">Consultar programas</h2>
+        </div> 
+        <hr id="hr-portfolio" class="o-hr">
+
+        <!-- Creación del buscador junto a su ícono -->
+        <div class="row">
+            <div class="col-xl-9 o-card-search">
+                <div class="form-group o-form">
+                    <div class="input-group o-searchGroup">
+                        <div class="input-group-addon o-addon">
+                            <img class="o-iconSearch" src="resources/search-1-01.png" alt="icono de buscar">
+                        </div>
+                            <input class="form-control search o-formInput o-formFont" id="search" name="search" type="search" value="" placeholder="Digite su búsqueda"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Creación de botón buscar -->
+        <div class="row">
+            <button type="submit" class="btn btn-primary o-buttonForm" id="searchbtn">Buscar</button>
+        </div>
+
+        <!-- Creación de tabla para los resultados de la búsqueda -->
+        <table class="o-table-program">
+            <tr>
+                <!-- Títulos de la tabla -->
+                <th>Sala</th>
+                <th>Nombre</th>
+                <th>Versión</th>
+              </tr>
+              <tr>
+                  <!-- Resultados -->
+                <td>Gráfica digital 1</td>
+                <td>Adobe Photoshop</td>
+                <td>CS6 (13.0)</td>
+              </tr>
+              <tr>
+                <td>Gráfica digital 2</td>
+                <td>Adobe Photoshop</td>
+                <td>CC 2018 (19.0.0)</td>
+              </tr>
+              <tr>
+                <td>Gráfica digital 3</td>
+                <td>Adobe Photoshop</td>
+                <td>CC 2019 (20.0.8)</td>
+              </tr>
+        </table>
+
+    </div>
+
+    <!-- Empieza el codigo del footer NO TOCAR -->
+    <div class = "row footer o-footer">
+        <div class="container o-containerFooter">
+            <div class = "col">
+                <img class = "o-logoFooter" src="resources/UAO_dark.png" alt= "logo de la pagina">
+            </div>
+            <div class = "col">
+                <p class="o-textFooter">
+                    Personería jurídica, Res. No. 0618, de la Gobernación del Valle del Cauca, del 20 de febrero de 1970.
+                </p>
+            </div>
+            <div class = "col">
+                <p class="o-textFooter">
+                    Universidad Autónoma de Occidente, Res. No. 2766, del Ministerio de Educación Nacional, del 13 de noviembre de 2003.
+                </p>
+            </div>
+            <div class = "col">
+                <p class="o-textFooter">
+                    Acreditación Institucional de Alta Calidad, Res. No. 16740, del 24 de agosto de 2017, con vigencia hasta el 2021.
+                </p>
+            </div>
+            <div class = "col">
+                <p class="o-textFooter">
+                    Universidad Vigilada MinEducación
+                </p>
+            </div>
+        </div>        
+    </div>
+    <!-- Termina el codigo del footer NO TOCAR -->
+        
+    
+    
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

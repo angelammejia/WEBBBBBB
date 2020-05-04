@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="resources/main.css" />
+</head>
+<body class= "o-body">
+    <!-- Empieza el codigo del navbar NO TOCAR -->
+    <!-- Se crea el encabezado de la página -->
+    <div class = "row o-header o-topnav sticky-top navbar">
+        <div class="container o-containerNav">
+            <div class = "col-sm-3">
+                <!-- Logo de la página -->
+                <img class = "o-logo" src="resources/logo.png" alt= "logo de la pagina">
+            </div>
+            <div class = "col-sm-6">
+                <!-- Opciones que brinda la página -->
+                <div class="row o-headerButtons">    
+                        <a href="#portfolio">Inicio</a>
+                        <a href="#portfolio">Mis reservas</a> 
+                        <a href="#portfolio">Daniela Perea</a>
+                        <img class="o-imgProfile" src="resources/avataaars.png" alt="Foto de perfil del usuario">
+                </div>
+            </div>
+        </div>        
+    </div>
+    <!-- Termina el codigo del navbar NO TOCAR -->
+
+    
+    <div class="container o-bodyContainerSchedule"> 
+        <!-- Este es el codigo del titulo de cada interfaz, solo cambien el nombre del titulo -->
+        <!-- Se crea una fila para el título subrayado -->
+        <div class="row">         
+            <h2 class= "o-title">Horarios</h2>
+        </div> 
+        <hr id="hr-portfolio" class="o-hr">
+        <div class="row">
+            <!-- Primer columna para el seleccionar laboratorio -->
+            <div class="col-xs">
+                <h3 class="o-label-labs-schedule">Seleccione laboratorio</h3>
+            </div>
+            <!-- Opciones del select -->
+            <div class="col"> 
+                <select id="comboBox-options" class="o-comboBox-options-schedule">
+                    <option value="sala-one">SS01</option>
+                    <option value="sala-two">SS02</option>
+                    <option value="sala-three">SS03</option>
+                    <option value="sala-four">SS04</option>
+                    <option value="lab-audio">AUDIO DIGITAL</option>
+                    <option value="lab-graph-one">GRÁFICA DIGITAL 1</option>
+                    <option value="lab-graph-two">GRÁFICA DIGITAL 2</option>
+                    <option value="lab-graph-three">GRÁFICA DIGITAL 3</option>
+                    <option value="lab-video">VIDEO DIGITAL</option>
+                    <option value="lab-anim">ANIMACIÓN DIGITAL</option>
+                </select>
+            </div>
+        </div>
+        <!-- Titulo de la sala que se seleccionó -->
+        <div class="o-ubication">
+            <div class="o-headerUbication">
+                <div class="row">         
+                    <h2 class= "o-title-ubication">Gráfica digital 1</h2>
+                </div>
+                <!-- Tabla del horario de la sala que se seleccionó-->
+                <table class="o-schedule">
+                    <tr>
+                    <th>Inicio</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    </tr>
+                    <tr>
+                    <td>7:00 - 10:00</td>
+                    <td>Gráfica digital</td>
+                    <td>Taller Seminario Multimedia</td>
+                    <td>Diseño de contenidos para plataformas digitales</td>
+                    <td>Gráfica digital 2</td>
+                    <td> </td>
+                    </tr>
+                    <td>10:00 - 12:00</td>
+                    <td>Diseño de contenidos para plataformas digitales</td>
+                    <td>Taller de comunicación hipermedia</td>
+                    <td>Gráfica digital</td>
+                    <td>Prensa digital 1</td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <td>12:00 - 2:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <td>2:00 - 4:00</td>
+                    <td>Gráfica digital</td>
+                    <td>Diseño de contenidos para plataformas digitales</td>
+                    <td></td>
+                    <td></td>
+                    <td>Pre prensa digital</td>
+                    </tr>
+                    <tr>
+                    <td>2:00 - 4:00</td>
+                    <td> </td>
+                    <td>Prensa digital 1</td>
+                    <td></td>
+                    <td></td>
+                    <td>Taller de comunicacion hipermedia</td>
+                  </tr>
+                  <td>4:00 - 6:00</td>
+                    <td>Prensa digital 2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <td>6:00 - 8:00</td>
+                  <td> </td>
+                  <td>Modelado y animación por computador</td>
+                  <td>Modelado y animación por computador</td>
+                  <td>Modelado y animación por computador</td>
+                  <td>Taller de comunicacion hipermedia</td>
+                  </tr>
+                  
+                  </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Empieza el codigo del footer NO TOCAR -->
+    <div class = "row footer o-footer">
+        <div class="container o-containerFooter">
+            <div class = "col">
+            <!-- Logo de la empresa-->
+                <img class = "o-logoFooter" src="resources/UAO_dark.png" alt= "logo de la pagina">
+            </div>
+            <!-- Normativas de la empresa de la pagina -->
+            <div class = "col">
+                <p class="o-textFooter">
+                    Personería jurídica, Res. No. 0618, de la Gobernación del Valle del Cauca, del 20 de febrero de 1970.
+                </p>
+            </div>
+            <div class = "col">
+                <p class="o-textFooter">
+                    Universidad Autónoma de Occidente, Res. No. 2766, del Ministerio de Educación Nacional, del 13 de noviembre de 2003.
+                </p>
+            </div>
+            <div class = "col">
+                <p class="o-textFooter">
+                    Acreditación Institucional de Alta Calidad, Res. No. 16740, del 24 de agosto de 2017, con vigencia hasta el 2021.
+                </p>
+            </div>
+            <div class = "col">
+                <p class="o-textFooter">
+                    Universidad Vigilada MinEducación
+                </p>
+            </div>
+        </div>        
+    </div>
+    <!-- Termina el codigo del footer NO TOCAR -->
+        
+    
+    
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

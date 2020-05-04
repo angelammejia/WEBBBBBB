@@ -1,0 +1,181 @@
+.o-body{
+    /* Se selecciona el fondo blanco */
+    background-color: #f4f4f4;
+}
+.o-header{
+    /* Se añaden las margenes, tamaños, alineación y sombras para el encabezado de la página  */
+    min-width: 4rem;
+    box-shadow: 0px 0px 10px 2px #d1d1d1;
+    align-items: center;
+    padding: 0rem;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.o-logo{
+    /* ancho del logo y márgenes */
+    width: 70%;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.o-topnav a {
+    /* Se selecciona el orden, las fuentes, el tamaño, la alineación del encabezado de la página */
+    float: left;
+    display: flex;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.o-topnav a:after {
+    /* Se selecciona la posición, el ancho, el color del fondo, demás estilos y transiciones para este contenedor*/
+	content: "";
+	position: absolute;
+	height: 2px;
+	background-color: #9e0b0f;
+	width: 0;
+	left: 50%;
+	bottom: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  	transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.o-topnav a:hover { 
+    /* Color secundario de la página */
+	color: #9e0b0f;
+}
+
+.o-topnav a:hover:after {
+    /* Ancho del topnav */
+	width: 100%;
+}
+
+.o-containerNav{
+    /* Organización del nav */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.o-imgProfile{
+    /* Imagen del perfil */
+    width: 10%;
+    height: 10%;
+}
+
+.o-headerButtons{
+    /* Botones del encabezado */
+    padding: 0rem;
+    justify-content: space-evenly;
+}
+
+.o-bodyContainerSchedule{
+    /* Contenedor de la tabla */
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px #d1d1d1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 3rem auto;
+}
+
+.o-hr{
+    /* Subrayado */
+    border: 1px solid #9e0b0f;
+    width: 100%;
+    margin: 0em 0 2rem 0;
+}
+
+.o-title{
+    /* Título del horario */
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin: 1rem 0rem 2rem 0rem;
+    color: #000000;
+}
+.o-imgCard{
+    /* imagen card */
+    width: 100%;
+    height: 70%;
+    
+}
+.o-footer{
+    min-width: 4rem;
+    box-shadow: 0px 0px 10px 2px #d1d1d1;
+    align-items: center;
+    padding: 0rem;
+    justify-content: space-between;
+    background-color: #000000;
+}
+/* logo del pie de página */
+.o-logoFooter{
+    width: 100%;
+    margin: 3rem 0rem 1rem 0rem;
+}
+/* Texto del pie de página */
+.o-textFooter{
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size: .9rem;
+    margin: 3rem 0rem 3rem 0rem;
+    color: white;
+}
+/* Container del pie de pagina */
+.o-containerFooter{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*                   A partir de aquí                       */
+
+
+/* combo box de opciones */
+.o-comboBox-options-schedule{
+    background: rgb(255, 255, 255);
+    border: 2px solid #665f602f;
+    margin: 1.3rem 0.1rem 0.5rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: #666666; 
+}
+/* label laboratorios */
+.o-label-labs-schedule{
+    font-family: 'Montserrat';
+    font-weight: 100px;
+    color: #666666;
+    font-size: 15px;
+    margin: 1.6rem;
+    padding: 0.2rem;
+}
+/* alineacion y ancho de la tabla  */
+ .o-schedule{
+    width: 100%;
+    text-align: left;
+
+ }
+ /* estilos de la tabla */
+ table, td, th {
+    border: 1px solid black;
+    font-family: 'Montserrat';
+  }
+
+.o-title-ubication{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 1rem 0rem 2rem 1rem;
+    color: #000000;
+}

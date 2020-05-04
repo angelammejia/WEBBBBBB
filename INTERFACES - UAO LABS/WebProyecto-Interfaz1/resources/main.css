@@ -1,0 +1,111 @@
+/*BODY*/
+html,body{
+    background-image: url('ImagenFondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+/*CONTENEDOR DEL CUERPO DE LA PAGINA*/
+.o-container{
+    height: 100%;
+    align-content: center;
+}
+/*CONTENEDOR DE LA CARD DE INICIO DE SESIÒN*/
+.o-cardRow{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+}
+
+/*CARD DE INICIO DE SESIÒN*/
+.o-card{
+    
+    margin: auto;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px #888888;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*LOGO DE LA PAGINA*/
+.o-logo{
+    width: 90%;
+}
+/*CONTENEDOR DEL FORMULARIO*/
+.o-form{
+    width: 88%;
+    flex-direction: column;
+}
+/*CONTENEDOR DEL CAMPO "nombre de usuario"*/
+.o-usernameGroup{
+    margin: 2rem 0rem 2rem 0rem;
+}
+/*ICONO DEL CAMPO "nombre de usuario"*/
+.o-addon{
+    display: flex; 
+    align-items: center; 
+    border-bottom: 1px solid #961a1d; 
+    background-color:white;
+    width: 10%;
+
+}
+.o-iconoUsuario{
+    
+    width: 90%;
+}
+
+/*CAMPO "nombre de usuario"*/
+.o-formInput{
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid #961a1d;
+    outline: none;
+}
+/*ESTILO DEL CAMPO "nombre de usuario"*/
+.o-formFont{
+    font-family: 'Montserrat';
+    color: #666666;
+}
+/*BOTON DE INICIO DE SESIÒN*/
+.o-buttonForm{
+    width: 88%;
+    margin: 1rem;
+    font-family: 'Montserrat';
+    background-color: #961a1d;
+    border-color: #961a1d;
+    outline: none;
+}
+.o-buttonForm:hover, .o-buttonForm:focus, .o-buttonForm:disabled, .o-buttonForm:not(:disabled):not(.disabled).active, .o-buttonForm:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color:black;
+    border-color: black;
+    outline: none;
+    box-shadow: none;
+}
+/*BOTON "olvide mi usuario o contraseña"*/
+a, a:hover, a:active{
+    color: #000;
+    outline: none;
+    box-shadow: none;
+    width: 88%;
+    text-align: center
+}
+/*BOTON "recordar mis datos"*/
+.o-checkboxGroup{
+    display: flex;
+    align-items: center;
+    width: 88%;
+    margin-top: 1rem;
+}
+.o-rememberLabel{
+    margin: 0rem;
+}
+
+
+    
