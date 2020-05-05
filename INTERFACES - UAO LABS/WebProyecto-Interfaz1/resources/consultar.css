@@ -76,7 +76,8 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    margin: 3rem auto;
+    margin: 2rem 8rem;
+    width: 81%;
 }
 
 .o-hr{

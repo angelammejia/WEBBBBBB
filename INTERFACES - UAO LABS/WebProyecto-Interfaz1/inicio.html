@@ -9,76 +9,63 @@
     <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="resources/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="resources/inicio.css" />
 </head>
 <body class= "o-body">
-    <!-- Empieza el codigo del navbar NO TOCAR -->
+    <!--Row del navbar-->
     <div class = "row o-header o-topnav sticky-top navbar">
+        <!--Contenedor del navbar-->
         <div class="container o-containerNav">
+            <!--Contenedor del Logo de la pagina-->
             <div class = "col-sm-3">
                 <img class = "o-logo" src="resources/logo.png" alt= "logo de la pagina">
-            </div>
+            </div><!--Contenedor del Logo de la pagina-->
             <div class = "col-sm-6">
                 <div class="row o-headerButtons">    
-                        <a href="#portfolio">Inicio</a>
+                        <a href="inicio.html">Inicio</a>
                         <a href="#portfolio">Mis reservas</a> 
-                        <a href="#portfolio">Daniela Perea</a>
+                        <a href="perfil.html">Daniela Perea</a>
                         <img class="o-imgProfile" src="resources/avataaars.png" alt="Foto de perfil del usuario">
                 </div>
             </div>
-        </div>        
-    </div>
-    <!-- Termina el codigo del navbar NO TOCAR -->
+        </div><!--Cierra contenedor del navbar-->    
+    </div><!--Cierra row del navbar-->
 
     
-    <div class="container o-bodyContainerProfile"> 
-        <!-- Este es el codigo del titulo de cada interfaz, solo cambien el nombre del titulo -->
-        <div class="row o-profileContainer">         
-            <h2 class= "o-title">Perfil</h2>
+    <div class="container o-bodyContainer"> 
+        <div class="row">         
+            <h2 class= "o-title">Inicio</h2>
         </div> 
         <hr id="hr-portfolio" class="o-hr">
         <div class="row">
-            <div class="col o-items">
-                <h3 class="o-font-items">Nombre (s) </h3>
-                <h3 class="o-font-items">Apellido (s) </h3>
-                <h3 class="o-font-items">Código</h3>
-                <h3 class="o-font-items">Usuario</h3>
-                <h3 class="o-font-items">Correo</h3>
-            </div>
             <div class="col">
-                <input disabled class="o-textbox" type="text" id="name" name="o-font-items" value="Daniela">
-                <input disabled class="o-textbox" type="text" id="lastname" name="o-font-items" value="Perea">
-                <input disabled class="o-textbox" type="text" id="id-codigo" name="o-font-items"value="2160923">
-                <input disabled class="o-textbox" type="text" id="user" name="o-font-items"value="daniela.perea">
-                <input disabled class="o-textbox" type="text" id="email" name="o-font-items"value="daniela.perea@uao.edu.co">
-            </div>
+                <div class="o-card">
+                    <a href="horarios.html">
+                        <img class="o-imgCard" src="resources/Card1.jpg" alt="Imagen de la card">
+                        <p class= "o-title2">Horarios de laboratorios</p>
+                    </a>
+                </div>
+            </div> 
             <div class="col">
-                <img class="o-imgProfile2" src="resources/avataaars.png" alt="Foto de perfil del usuario">     
-            </div>
-        </div>
-        <div class="row o-passwordContainer">         
-            <h4 class= "o-titlePassword">Cambiar contraseña</h4>
+                <div class="o-card">
+                    <a href="consultar.html">
+                        <img class="o-imgCard" src="resources/Card3.jpg" alt="Imagen de la card">
+                        <p class= "o-title2">Disponibilidad de software</p>
+                    </a>
+                </div>
+            </div> 
+            <div class="col">
+                <div class="o-card">
+                    <a href="reservar.html">
+                        <img class="o-imgCard" src="resources/Card2.jpg" alt="Imagen de la card">
+                        <p class= "o-title2">Realizar reserva</p>
+                    </a> 
+                </div>
+            </div> 
+              
         </div> 
-        <div class="row">
-            <div class="col-sm-4 o-items">
-                <h3 class="o-font-items">Contraseña actual</h3>
-                <h3 class="o-font-items">Contraseña nueva</h3>
-                <h3 class="o-font-items">Confirmar contraseña</h3>
-            </div>
-            <div class="col-sm-4">
-                <input type="password" name="actualPassword" id="actualPassword" value="" class="form-control login-password o-passwordInput" placeholder="">
-                <input type="password" name="newPassword" id="newPassword" value="" class="form-control login-password o-passwordInput" placeholder="">
-                <input type="password" name="confirmPassword" id="confirmPassword" value="" class="form-control login-password o-passwordInput" placeholder="">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 o-items">
-                <button type="submit" class="btn btn-primary o-buttonForm" id="paswordbtn">Cambiar contraseña</button>
-            </div>
-        </div>
-        </div>
+    </div>
 
-    <!-- Empieza el codigo del footer NO TOCAR -->
     <div class = "row footer o-footer">
         <div class="container o-containerFooter">
             <div class = "col">
@@ -106,7 +93,6 @@
             </div>
         </div>        
     </div>
-    <!-- Termina el codigo del footer NO TOCAR -->
         
     
     
