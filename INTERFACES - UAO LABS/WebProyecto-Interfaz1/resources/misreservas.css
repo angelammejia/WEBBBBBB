@@ -165,71 +165,6 @@ html {
     margin: 0rem 0rem 1rem 0rem;
     color: #000000;
 }
-
-/*ESTILOS DE LAS CARDS*/
-/*Estilo del contendor de la card*/
-.o-card{
-    margin: 1rem 0rem;
-    width: 100%;
-    height: 89%;
-    background-color: white;
-    border: solid 1px #d1d1d1;
-    border-radius: 10px;
-    padding: 0rem 0rem 1rem 0rem;
-    display: flex;
-    flex-direction: column; 
-}
-.o-card:hover{
-    box-shadow: 0px 0px 10px 1px #d1d1d1;
-}
-/*ESTILOS DEL HEADER DE LA CARD*/
-/*Estilo del contenedor del header de la card*/
-.o-cardSub{
-    width: 100%;
-    height: 15rem;
-}
-/*Estilo de la imagen de la card*/
-.o-imgCard{
-    width: 100%;
-    height: 100%;
-    border-radius: 8px 8px 0px 0px;  
-}
-
-/*Estilo del titulo de la card*/
-.o-title2{
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 1.3rem;
-    margin: 1rem 1rem 1rem 1rem;
-    color: #000000;
-}
-
-/*DESCRIPCION DE LA CARD*/
-/*Estilo del contenedor de la descripcion*/
-.o-infoCard{
-    padding:  0rem;
-    min-height: 100px;
-    margin:  0rem 1rem;
-}
-/*Estilo de la descripcion de la card*/
-.o-title3{
-    font-family: 'Montserrat';
-    font-weight: normal;
-    font-size: 13px;
-    margin: 0rem 0rem 1.5rem 0rem;
-    color: #000000;
-}
-
-/*ESTILOS DEL FOOTER DE LA CARD*/
-/*Estilo del contendor del footer de la card*/
-.o-foterCard{
-    display: flex;
-    justify-content: flex-end;
-    background: #fff;
-    border-radius: 20px;
-    padding:0rem 1rem;
-    margin: 0rem 0rem 2rem 0rem;
-}
 /*Estilo del boton de la card*/
 .o-Button{
     margin: 0;
@@ -248,6 +183,7 @@ html {
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
+    padding: 0rem 0.5rem;
 
 }
 .o-Button:hover, .o-Button:focus, .o-Button:disabled, .o-Button:not(:disabled):not(.disabled).active, .o-Button:not(:disabled):not(.disabled):active {
@@ -257,6 +193,40 @@ html {
     outline: none;
     box-shadow: none;
 }
+/* alineacion y ancho de la tabla  */
+.o-schedule{
+    width: 100%;
+    text-align: left;
+
+ }
+/* estilos de la tabla */
+th{ 
+    font-family: 'Montserrat';
+    font-weight: 80px;
+    background-color:  #631213;
+    color: #ffffff;
+    font-size: 14px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 1rem;
+}
+
+td{ 
+    font-family: 'Montserrat';
+    font-weight: 410;
+    color: #000000;
+    font-size: 14px;
+    background-color:  #ffffff;
+    border: 1px solid rgb(107, 107, 107);
+    padding: 1rem;
+}
+.o-title-ubication{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 1rem 0rem 2rem 1rem;
+    color: #000000;
+}
+
 
 /*ESTILOS DEL FOOTER DE LA PAGINA*/
 /*Contendeor del footer*/
@@ -285,60 +255,4 @@ html {
     font-size: .9rem;
     margin: 3rem 0rem 3rem 0rem;
     color: white;
-}
-
-
-  
-
-/*Responsive*/
-@media screen and (max-width:1000px){
-    /*Estilos del contenedor de links*/
-    .o-navbar{
-        margin: 0rem;
-    }
-    /*Estilos de la marca*/
-    .o-brand{
-        width: 20%;
-        margin: 0rem;
-        height: 3rem;
-    }
-
-    .o-header{
-        padding: 0rem 1rem;
-    }
-    .o-bodyContainer{
-        padding: 2rem;
-        margin: 5rem 2.5rem;
-        width: 85%;
-    }
-    .o-card{
-        min-width: 100%;
-    }
-    
-    
-}
-
-/*Responsive*/
-@media screen and (max-width:500px){
-    /*Estilos del contenedor de links*/
-    .o-navbar{
-        margin: 0rem;
-    }
-    /*Estilos de la marca*/
-    .o-brand{
-        width: 40%;
-        margin: 0rem;
-        height: 3rem;
-    }
-    .o-header{
-        padding: 0rem 1rem;
-    }
-    .o-containerFooter{
-        display: none;
-    }
-    .o-logo{
-        width: 50%;
-    }
-    
-    
 }
