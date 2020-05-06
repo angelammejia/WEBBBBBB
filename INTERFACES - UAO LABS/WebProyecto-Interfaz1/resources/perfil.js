@@ -21,7 +21,10 @@ function showHideElement(){
     } else {
         Ocultar();
     }
-    
+}
+
+function changePassword(){
+    alert ("Se ha guardado los cambios")
 }
 
 
