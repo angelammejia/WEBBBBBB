@@ -195,7 +195,18 @@
 
 /*                   A partir de aquí                       */
 
-
+.o-location{
+    width: 100%;
+    overflow: scroll;
+}
+.o-location1{
+    width: 100%;
+    overflow: scroll;
+}
+.o-location2{
+    width: 100%;
+    overflow: scroll;
+}
 /* combo box de opciones */
 .o-comboBox-options-schedule{
     background: rgb(255, 255, 255);
@@ -222,8 +233,6 @@
 .o-schedule{
     width: 100%;
     text-align: center;
-    margin: auto;
-    overflow-x: scroll;
 }
 
 .tableContainer{
@@ -280,7 +289,9 @@ table .empty {
     color: #000000;
     font-weight: normal;
 }
-
+table{
+    width: 80%;
+}
 /*Responsive*/
 @media screen and (max-width:1000px){
     /*Estilos del contenedor de links*/
