@@ -355,6 +355,7 @@ a, a:hover, a:active{
 }
 table{
     border: 1px solid white;
+    overflow: scroll;
 }
 
 th{
@@ -378,6 +379,7 @@ table .o-pcable {
     border: 1px solid white;
 }
 
+/*Responsive*/
 @media screen and (max-width:1000px){
     /*Estilos del contenedor de links*/
     .o-navbar{
@@ -393,16 +395,7 @@ table .o-pcable {
     .o-header{
         padding: 0rem 1rem;
     }
-    .o-bodyContainer{
-        padding: 2rem;
-        margin: 5rem 2.5rem;
-        width: 85%;
-    }
-    .o-card{
-        min-width: 100%;
-    }
-    
-    
+      
 }
 
 /*Responsive*/
@@ -426,4 +419,18 @@ table .o-pcable {
     .o-logo{
         width: 50%;
     }
+    table {
+        overflow-x: 90%;
+        width: 100%;
+        margin: 1rem;
+        padding: 1rem;
+      }
+    .o-header a{
+        justify-content: flex-start;
+    }
+    .o-bodyContainer{
+        padding: 0.5rem;
+        margin: 5rem 0rem;
+        width: 100%;
+    }  
 }
