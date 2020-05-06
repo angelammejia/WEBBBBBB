@@ -443,6 +443,7 @@ table .o-pcable {
         padding: 0.5rem;
         margin: 5rem 0rem;
         width: 100%;
+        width:100%;
     }  
     .o-buttonForm{
         width: 60%;
