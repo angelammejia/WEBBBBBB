@@ -220,14 +220,19 @@
 
  /* estilos de la tabla */
 .o-schedule{
-    width: 75%;
+    width: 100%;
     text-align: center;
     margin: auto;
-    overflow: scroll;
+    overflow-x: scroll;
 }
 
 .tableContainer{
     text-align: center;
+}
+
+.o-ubication{
+    width: 100%;
+    overflow-x: scroll;
 }
 
 th{ 
@@ -246,6 +251,9 @@ td{
     font-size: 14px;
     background-color:  #ebebeb;
     border: 1px solid rgb(107, 107, 107);
+}
+table{
+    width: 80%;
 }
 
 table .empty {
@@ -322,7 +330,7 @@ table .empty {
     .o-header a{
         justify-content: flex-start;
     }
-    .o-bodyContainer{
+    .o-bodyContainerSchedule{
         padding: 0.5rem;
         margin: 5rem 0rem;
         width: 100%;

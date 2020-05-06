@@ -1,6 +1,12 @@
+/*ESTILOS DE LA PAGINA*/
+html {
+    line-height: 0rem;
+    margin: 0rem;
+    
+}
 .o-body{
-    /* Fondo de la interfaz */
     background-color: #f4f4f4;
+    margin: 0rem;
 }
 
 /*ESTILOS DEL NAVBAR*/
@@ -142,7 +148,7 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    margin: 7rem 8rem 2rem 8rem;
+    margin: 5.5rem 8rem 2rem 8rem;
     width: 81%;
 }
 
@@ -379,6 +385,11 @@ table .o-pcable {
     border: 1px solid white;
 }
 
+.o-inforeserve{
+    width: 100%;
+    overflow-x: scroll;
+}
+
 /*Responsive*/
 @media screen and (max-width:1000px){
     /*Estilos del contenedor de links*/
@@ -428,9 +439,14 @@ table .o-pcable {
     .o-header a{
         justify-content: flex-start;
     }
-    .o-bodyContainer{
+    .o-bodyContainerReserve{
         padding: 0.5rem;
         margin: 5rem 0rem;
         width: 100%;
     }  
+    .o-buttonForm{
+        width: 60%;
+        margin: 0rem 0rem 3rem 0rem;
+        
+    }
 }
