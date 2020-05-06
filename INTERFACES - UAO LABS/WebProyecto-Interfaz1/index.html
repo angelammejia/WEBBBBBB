@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="resources/main.css" />
+    <script src="resources/index.js"></script>
+    
 </head>
 <body class= "o-body">
         <!--Contenedor del contenido de la pagina-->
@@ -25,25 +27,25 @@
                         <!--Contenedor del nombre de usuario-->
                         <div class="input-group o-usernameGroup">
                           <div class="input-group-addon o-addon">
-                            <img class="o-iconoUsuario" src="resources/userIcon.png" alt="icono de usaurio">
+                            <img class="o-iconoUsuario" src="resources/userIcon-01.svg" alt="icono de usaurio">
                           </div>
                           <input class="form-control login-username o-formInput o-formFont" id="username" name="username" type="text" value="" placeholder="Nombre de usuario"/>
                         </div><!--Cierra contenedor del nombre de usuario-->
                         <!--Contenedor de la contraseña-->
                         <div class="input-group">
                             <div class="input-group-addon o-addon">
-                              <img class="o-iconoUsuario" src="resources/key-01.png" alt="icono de contraseña">
+                              <img class="o-iconoUsuario" src="resources/key-01.svg" alt="icono de contraseña">
                             </div>
                             <input type="password" name="password" id="password" value="" class="form-control login-password o-formFont o-formInput" placeholder="Contraseña">
                           </div> <!--Cierra contenedor de la contraseña-->
                         </div><!--Cierre contenedor del formulario-->
                         <!--Boton de inicio de sesiòn-->
-                        <a type="submit" class="btn btn-primary o-buttonForm" id="loginbtn" href="inicio.html"> Acceder</a>
+                        <button type="button" class="btn btn-primary o-buttonForm" onclick="Login()" id="loginbtn"> Acceder</button>
                         <!--Boton "olvide mi usuario o contraseña"-->
                         <a class ="o-formFont" href="">¿Olvidó su nombre de usuario o contraseña?</a> 
                         <!--Contenedor "recordar mis datos"-->
                         <div class="input-group o-checkboxGroup">
-                            <input type="checkbox" name="remember" id="remember" value="1">
+                            <input class="o-check"type="checkbox" name="remember" id="remember" value="1">
                             <label class="o-rememberLabel o-formFont">Recordar mis datos</label>
                         </div><!--Cierre contenedor "recordar mis datos"-->                           
                 </div><!--Acaba contenido de la card-->

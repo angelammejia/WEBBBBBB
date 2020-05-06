@@ -12,23 +12,30 @@
     <link rel="stylesheet" type="text/css" media="screen" href="resources/inicio.css" />
 </head>
 <body class= "o-body">
-    <!--Row del navbar-->
-    <div class = "row o-header o-topnav sticky-top navbar">
+    <div class = "o-header sticky-top navbar">
         <!--Contenedor del navbar-->
-        <div class="container o-containerNav">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <!--Contenedor del Logo de la pagina-->
-            <div class = "col-sm-3">
-                <img class = "o-logo" src="resources/logo.png" alt= "logo de la pagina">
-            </div><!--Contenedor del Logo de la pagina-->
-            <div class = "col-sm-6">
-                <div class="row o-headerButtons">    
-                        <a href="inicio.html">Inicio</a>
-                        <a href="#portfolio">Mis reservas</a> 
-                        <a href="perfil.html">Daniela Perea</a>
-                        <img class="o-imgProfile" src="resources/avataaars.png" alt="Foto de perfil del usuario">
-                </div>
+            <img class = "col-lg-3 o-logo" src="resources/logo.png" alt= "logo de la pagina">
+            <!--Boton de menú-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Contenedor de links del NavBar-->
+            <div class="col-lg-4 collapse navbar-collapse o-navbar" id="navbarTogglerDemo02">   
+                        <a class="col-lg-4 col-md-2 col-sm-1" href="inicio.html">Inicio</a>
+                        <a class="col-lg-6 col-md-3 col-sm-1" href="misreservas.html">Mis reservas</a> 
+                        <!--<a href="perfil.html">Configuracion</a>-->
+                        <div class="dropdown col-lg-8 col-md-5 col-sm-1">
+                            <button class="dropbtn">Configuración</button>
+                            <div class="dropdown-content">
+                              <a href="perfil.html">Editar Perfil</a>
+                              <a href="index.html">Cerrar sesión</a>
+                            </div>
+                        </div>
             </div>
-        </div><!--Cierra contenedor del navbar-->    
+            
+        </nav><!--Cierra contenedor del navbar-->    
     </div><!--Cierra row del navbar-->
 
     
@@ -38,28 +45,46 @@
         </div> 
         <hr id="hr-portfolio" class="o-hr">
         <div class="row">
-            <div class="col">
+            <div class="col-lg-4 col-md-4 col-sm-1">
                 <div class="o-card">
-                    <a href="horarios.html">
-                        <img class="o-imgCard" src="resources/Card1.jpg" alt="Imagen de la card">
-                        <p class= "o-title2">Horarios de laboratorios</p>
-                    </a>
+                        <div class="o-cardSub">
+                            <img class="o-imgCard" src="https://getsling.com/wp-content/uploads/2018/10/pasted-image-0-42.png" alt="Imagen de la card">
+                        </div>
+                        <h2 class= "o-title2">Horarios de laboratorios</h2>
+                        <div class="o-infoCard">
+                            <p class= "o-title3">Consultar el horario de los diferentes laboratorios de la UAO y su disponibilidad</p>
+                        </div>
+                        <div class = "o-foterCard">
+                            <a type="submit" class="btn btn-primary o-Button" id="loginbtn" href="horarios.html.html"> ir</a>
+                        </div>
                 </div>
             </div> 
-            <div class="col">
+            <div class="col-lg-4 col-md-4 col-sm-1">
                 <div class="o-card">
-                    <a href="consultar.html">
-                        <img class="o-imgCard" src="resources/Card3.jpg" alt="Imagen de la card">
-                        <p class= "o-title2">Disponibilidad de software</p>
-                    </a>
+                        <div class="o-cardSub">
+                            <img class="o-imgCard" src="https://images.unsplash.com/photo-1536240478700-b869070f9279?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Imagen de la card">
+                        </div>
+                       <h2 class= "o-title2">Disponibilidad de software</h2>
+                       <div class="o-infoCard">
+                            <p class= "o-title3">Consultar la ubicacion de los diferentes softwares que ofrece la UAO y su respectivas versiones</p>
+                       </div>
+                       <div class = "o-foterCard">
+                            <a type="submit" class="btn btn-primary o-Button" id="loginbtn" href="consultar.html.html"> ir</a>
+                        </div>
                 </div>
             </div> 
-            <div class="col">
+            <div class="col-lg-4 col-md-4 col-sm-1">
                 <div class="o-card">
-                    <a href="reservar.html">
-                        <img class="o-imgCard" src="resources/Card2.jpg" alt="Imagen de la card">
-                        <p class= "o-title2">Realizar reserva</p>
-                    </a> 
+                        <div class="o-cardSub">
+                            <img class="o-imgCard" src="https://images.unsplash.com/photo-1577394732330-38cef75bc388?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Imagen de la card">
+                        </div>
+                        <h2 class= "o-title2">Reserva de equipos</h2>
+                        <div class="o-infoCard">
+                            <p class= "o-title3">Realizar la reserva de equipos en los diferentes laboratorios de la UAO</p>
+                        </div>
+                        <div class = "o-foterCard">
+                            <a type="submit" class="btn btn-primary o-Button" id="loginbtn" href="reservar.html"> ir</a>
+                        </div>
                 </div>
             </div> 
               
