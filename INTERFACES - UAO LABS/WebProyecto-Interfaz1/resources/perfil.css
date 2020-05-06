@@ -31,6 +31,8 @@
     position: relative;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    display:flex;
+    justify-content: center;
 }
 .o-header a:after {
     content: "";
@@ -388,6 +390,61 @@ a, a:hover, a:active{
     margin: 1rem;
 }
 
+/*Responsive*/
+@media screen and (max-width:1000px){
+    /*Estilos del contenedor de links*/
+    .o-navbar{
+        margin: 0rem;
+    }
+    /*Estilos de la marca*/
+    .o-brand{
+        width: 20%;
+        margin: 0rem;
+        height: 3rem;
+    }
+
+    .o-header{
+        padding: 0rem 1rem;
+    }
+      
+}
+
+/*Responsive*/
+@media screen and (max-width:500px){
+    /*Estilos del contenedor de links*/
+    .o-navbar{
+        margin: 0rem;
+    }
+    /*Estilos de la marca*/
+    .o-brand{
+        width: 40%;
+        margin: 0rem;
+        height: 3rem;
+    }
+    .o-header{
+        padding: 0rem 1rem;
+    }
+    .o-containerFooter{
+        display: none;
+    }
+    .o-logo{
+        width: 50%;
+    }
+    table {
+        overflow-x: 90%;
+        width: 100%;
+        margin: 1rem;
+        padding: 1rem;
+      }
+    .o-header a{
+        justify-content: flex-start;
+    }
+    .o-bodyContainerProfile{
+        padding: 0.5rem;
+        margin: 5rem 0rem;
+        width: 100%;
+    }  
+}
 
 
 
