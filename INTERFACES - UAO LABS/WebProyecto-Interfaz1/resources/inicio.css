@@ -44,6 +44,7 @@ html {
     position: relative;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    justify-content: center;
 }
 .o-header a:after {
 	content: "";
@@ -296,12 +297,6 @@ html {
     .o-navbar{
         margin: 0rem;
     }
-    /*Estilos de la marca*/
-    .o-brand{
-        width: 20%;
-        margin: 0rem;
-        height: 3rem;
-    }
 
     .o-header{
         padding: 0rem 1rem;
@@ -311,9 +306,7 @@ html {
         margin: 5rem 2.5rem;
         width: 85%;
     }
-    .o-card{
-        min-width: 100%;
-    }
+    
     
     
 }
@@ -324,12 +317,6 @@ html {
     .o-navbar{
         margin: 0rem;
     }
-    /*Estilos de la marca*/
-    .o-brand{
-        width: 40%;
-        margin: 0rem;
-        height: 3rem;
-    }
     .o-header{
         padding: 0rem 1rem;
     }
@@ -338,6 +325,22 @@ html {
     }
     .o-logo{
         width: 50%;
+    }
+    .o-header a{
+        justify-content: flex-start;
+    }
+    .o-bodyContainer{
+        padding: 0rem;
+        margin: 5rem 0rem;
+        width: 100%;
+        
+    } 
+    .o-card{
+        max-width: 80%;
+    }
+    .o-cardDiv{
+        display: flex;
+        justify-content: center;
     }
     
 }
