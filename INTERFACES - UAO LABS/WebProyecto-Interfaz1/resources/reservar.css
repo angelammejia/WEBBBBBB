@@ -2,24 +2,31 @@
     /* Fondo de la interfaz */
     background-color: #f4f4f4;
 }
+
+/*ESTILOS DEL NAVBAR*/
+
+/*Estilos del Navbar*/
 .o-header{
-    /* Estilos del header */
-    min-width: 4rem;
-    box-shadow: 0px 0px 10px 2px #d1d1d1;
+    min-width: 100%;
+    box-shadow: 0px 0px 10px 0px #d1d1d1;
     align-items: center;
-    padding: 0rem;
+    padding: 0rem 6rem;
+    margin: 0rem;
     justify-content: space-between;
     background-color: white;
+    position:fixed;
 }
-
+/*Estilos del contenedor de links*/
+.o-navbar{
+    margin: 0rem 0rem 0rem 28rem;
+    justify-content: space-around;
+}
+/*Estilos del logo del Navbar*/
 .o-logo{
-    /* clase del logo y sus estilos */
-    width: 70%;
-    margin: 1rem 0rem 1rem 0rem;
+    width: 20%;
 }
-
-/* Estilos al topnav */
-.o-topnav a {
+/*Estilos de los links del NavBar*/
+.o-header a {
     float: left;
     display: flex;
     color: #000000;
@@ -32,47 +39,97 @@
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
-
-.o-topnav a:after {
-	content: "";
-	position: absolute;
-	height: 2px;
-	background-color: #9e0b0f;
-	width: 0;
-	left: 50%;
-	bottom: 0;
+.o-header a:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #9e0b0f;
+    width: 0;
+    left: 50%;
+    bottom: 0;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-	transform: translateX(-50%);
-	-webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-  	transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+    transform: translateX(-50%);
+    -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
 }
-
-.o-topnav a:hover {
-	color: #9e0b0f;
+.o-header a:hover{
+    color: #9e0b0f;
 }
-
-.o-topnav a:hover:after {
-	width: 100%;
-}
-
-.o-containerNav{
+.o-header a:hover:after {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
 }
-/* Estilos al topnav fin */
-
-/* Estilos a la foto de perfil */
-.o-imgProfile{
-    width: 10%;
-    height: 10%;
+/*ESTILOS DEL DROPDOWN DEL NAVBAR*/
+/*Estilos del boton dropdown*/
+.dropbtn {
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border: none;
+    background-color: white;
+}
+.dropbtn:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #9e0b0f;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
 }
 
-/* Estilos para botones del header */
-.o-headerButtons{
+.dropbtn:hover{
+    color: #9e0b0f;
+}
+.dropbtn:hover:after{
+    width: 100%;
+}
+ 
+/*Contenedor del dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
     padding: 0rem;
-    justify-content: space-evenly;
+    margin: 0rem;
+} 
+/*Contenido del dropdown*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+} 
+/* Links dentro del dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/*dropdown links cuando hay hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+  
+/*Mostrar el contenido del dropdown cuando hay hover*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+/*Color del boton cuando hay hover*/
+.dropdown:hover .dropbtn {
+   background-color: #9e0b1000;
 }
 
 /* Estilos al contenedor de la reserva  */
@@ -83,7 +140,7 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    margin: 2rem 8rem;
+    margin: 7rem 8rem 2rem 8rem;
     width: 81%;
 }
 

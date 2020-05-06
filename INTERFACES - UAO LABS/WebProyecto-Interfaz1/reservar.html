@@ -13,22 +13,32 @@
 </head>
 <body class= "o-body">
     <!-- Empieza el codigo del navbar NO TOCAR -->
-    <div class = "row o-header o-topnav sticky-top navbar">
-        <div class="container o-containerNav">
-            <div class = "col-sm-3">
-                <img class = "o-logo" src="resources/logo.png" alt= "logo de la pagina">
+    html del navbar
+<div class = "o-header sticky-top navbar">
+        <!--Contenedor del navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <!--Contenedor del Logo de la pagina-->
+            <img class = "col-lg-3 o-logo" src="resources/logo.png" alt= "logo de la pagina">
+            <!--Boton de menú-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Contenedor de links del NavBar-->
+            <div class="col-lg-4 collapse navbar-collapse o-navbar" id="navbarTogglerDemo02">   
+                        <a class="col-lg-4 col-md-2 col-sm-1" href="inicio.html">Inicio</a>
+                        <a class="col-lg-6 col-md-3 col-sm-1" href="misreservas.html">Mis reservas</a> 
+                        <!--<a href="perfil.html">Configuracion</a>-->
+                        <div class="dropdown col-lg-8 col-md-5 col-sm-1">
+                            <button class="dropbtn">Configuración</button>
+                            <div class="dropdown-content">
+                              <a href="perfil.html">Editar Perfil</a>
+                              <a href="index.html">Cerrar sesión</a>
+                            </div>
+                        </div>
             </div>
-            <div class = "col-sm-6">
-                <div class="row o-headerButtons">    
-                        <a href="inicio.html">Inicio</a>
-                        <a href="#portfolio">Mis reservas</a> 
-                        <a href="perfil.html">Daniela Perea</a>
-                        <img class="o-imgProfile" src="resources/avataaars.png" alt="Foto de perfil del usuario">
-                </div>
-            </div>
-        </div>        
-    </div>
-    <!-- Termina el codigo del navbar NO TOCAR -->
+            
+        </nav><!--Cierra contenedor del navbar-->    
+    </div><!--Cierra row del navbar-->
 
     
     <div class="container o-bodyContainerReserve"> 
@@ -135,7 +145,7 @@
             <div class="col">
                 <img class = "o-computer" src="resources/pcs-disable.png">
                 <div class="form-check">
-                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios13" value="option13">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios13" value="option13" disabled>
                 </div>
             </div>
             <div class="col">
@@ -203,7 +213,7 @@
 
         <!-- DatePickers para el inicio y final de la reserva del equipo -->
         <div class="row">
-            <div class="col-xl-9 o-card-datePicker">
+            <div class="col-xl-7 o-card-datePicker">
                 <div class="form-group o-form">
                     <div class="o-label-datepickerContainer">
                         <h3 class="o-label-datepicker">Desde</h3>
