@@ -54,23 +54,19 @@
                 <h3 class="o-label-labs">Seleccione laboratorio</h3>
             </div>
             <div class="col"> 
-                <select id="comboBox-options" class="o-comboBox-options-reserve">
-                    <option value="sala-one">SS01</option>
-                    <option value="sala-two">SS02</option>
-                    <option value="sala-three">SS03</option>
-                    <option value="sala-four">SS04</option>
+                <select name="lab" id="lab" onChange="labOnChange(this)" class="o-comboBox-options-reserve">
                     <option value="lab-audio">AUDIO DIGITAL</option>
-                    <option value="lab-graph-one">GRÁFICA DIGITAL 1</option>
-                    <option value="lab-graph-two">GRÁFICA DIGITAL 2</option>
-                    <option value="lab-graph-three">GRÁFICA DIGITAL 3</option>
+                    <option value="lab-graph-one">GRÁFICA DIGITAL</option>
                     <option value="lab-video">VIDEO DIGITAL</option>
-                    <option value="lab-anim">ANIMACIÓN DIGITAL</option>
                 </select>
             </div>
         </div>
     </br>
         <!-- Ubicación de equipos de respectiva sala y disponibilidad -->
-       
+    <div class="o-inforeserve" id="o-inforeserve" style="display:;">
+        <div class="row">         
+            <h2 class= "o-title-location-pc">Audio digital</h2>
+        </div>
         <div class="row">
             <div class="col">
                 <img class = "o-computer" src="resources/pcs-able.png">
@@ -206,9 +202,24 @@
             <div class="col">
                 <img class = "o-computer" src="resources/pcs-disable.png">
                 <div class="form-check">
-                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios6" value="option6" disabled>
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios23" value="option23" disabled>
                 </div>
             </div>
+        </div>
+        
+        <div class="row">
+            <table class="table table-condensed o-details">
+                <tr>
+                    <td class="o-pcdisable"></th>
+                    <td class="o-pcstatus-label">Equipo ocupado</th>
+                </tr>
+                <tr>
+                    <td class="o-pcable"></th>
+                    <td class="o-pcstatus-label">Equipo disponible</td>
+                </tr>
+            </table>
+
+            
         </div>
 
         <!-- DatePickers para el inicio y final de la reserva del equipo -->
@@ -238,9 +249,395 @@
         </div>
 
         <!-- Botón realizar reserva -->
-        <div class="row">
-            <button type="submit" class="btn btn-primary o-buttonForm" id="reservebtn">Reservar</button>
+        
+        <div class="row o-reservebtn">
+            <button type="submit" class="btn btn-primary o-buttonForm" id="reservebtn" onclick="saveReserve()">Reservar</button>
         </div>
+    </div>
+
+    <div class="o-inforeserve2" id="o-inforeserve2" style="display:none">
+        <div class="row">         
+            <h2 class= "o-title-location-pc">Gráfica digital</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios11" value="option11" disabled>
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios21" value="option21" checked>
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios31" value="option31">
+                </div>
+            </div>
+            <div class="col o-emptyspace">
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios51" value="option51" disabled>
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios61" value="option61" disabled>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios71" value="option71" disabled>
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios81" value="option81">
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios91" value="option91" disabled>
+                </div>
+            </div>
+            <div class="col o-emptyspace">
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios111" value="option111" disabled>
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios121" value="option121" disabled>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios131" value="option131" disabled>
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios141" value="option141">
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios151" value="option151">
+                </div>
+            </div>
+            <div class="col o-emptyspace">
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios171" value="option171" disabled>
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios181" value="option181">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios191" value="option191">
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios201" value="option201">
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios211" value="option211">
+                </div>
+            </div>
+            <div class="col o-emptyspace">
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios221" value="option221">
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios231" value="option231" disabled>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <table class="table table-condensed o-details">
+                <tr>
+                    <td class="o-pcdisable"></th>
+                    <td class="o-pcstatus-label">Equipo ocupado</th>
+                </tr>
+                <tr>
+                    <td class="o-pcable"></th>
+                    <td class="o-pcstatus-label">Equipo disponible</td>
+                </tr>
+            </table>
+
+            
+        </div>
+
+        <!-- DatePickers para el inicio y final de la reserva del equipo -->
+        <div class="row">
+            <div class="col-xl-7 o-card-datePicker">
+                <div class="form-group o-form">
+                    <div class="o-label-datepickerContainer">
+                        <h3 class="o-label-datepicker">Desde</h3>
+                    </div>
+                    <div class="input-group o-dateGroup">
+                        <div class="input-group-addon o-addon">
+                            <img class="o-icondatePicker" src="resources/datePicker.png" alt="icono de calendario">
+                        </div>
+                            <input class="form-control datePicker o-formInput o-formFont" id="datePicker" name="datePicker" type="datetime-local" value="" placeholder="Inicio de reserva"/>
+                    </div>
+                    <div class="o-label-datepickerContainer">
+                        <h3 class="o-label-datepicker"></br></br>Hasta</h3>
+                    </div>
+                    <div class="input-group o-dateGroup">
+                        <div class="input-group-addon o-addon">
+                            <img class="o-icondatePicker" src="resources/datePicker.png" alt="icono de calendario">
+                        </div>
+                            <input type="datetime-local" name="datePicker" id="datePicker" value="" class="form-control datePicker o-formFont o-formInput" placeholder="Fin de reserva">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón realizar reserva -->
+        
+        <div class="row o-reservebtn">
+            <button type="submit" class="btn btn-primary o-buttonForm" id="reservebtn"  onclick="saveReserve()">Reservar</button>
+        </div>
+    </div>
+
+    <div class="o-inforeserve3" id="o-inforeserve3" style="display:none">
+        <div class="row">         
+            <h2 class= "o-title-location-pc">Video digital</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios12" value="option12" checked>
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios22" value="option22">
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios32" value="option32">
+                </div>
+            </div>
+            <div class="col o-emptyspace">
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios52" value="option52">
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios62" value="option62">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios72" value="option72" disabled>
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios82" value="option82">
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios92" value="option92">
+                </div>
+            </div>
+            <div class="col o-emptyspace">
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios112" value="option112">
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios122" value="option122">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios132" value="option132" disabled>
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios142" value="option142" disabled>
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios152" value="option152" disabled>
+                </div>
+            </div>
+            <div class="col o-emptyspace">
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios172" value="option172" disabled>
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios182" value="option182" disabled>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios192" value="option192">
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios202" value="option202">
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios212" value="option212">
+                </div>
+            </div>
+            <div class="col o-emptyspace">
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-able.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios222" value="option222">
+                </div>
+            </div>
+            <div class="col">
+                <img class = "o-computer" src="resources/pcs-disable.png">
+                <div class="form-check">
+                    <input class="custom-control custom-radio" type="radio" name="Radios" id="Radios232" value="option232">
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <table class="table table-condensed o-details">
+                <tr>
+                    <td class="o-pcdisable"></th>
+                    <td class="o-pcstatus-label">Equipo ocupado</th>
+                </tr>
+                <tr>
+                    <td class="o-pcable"></th>
+                    <td class="o-pcstatus-label">Equipo disponible</td>
+                </tr>
+            </table>
+
+            
+        </div>
+
+        <!-- DatePickers para el inicio y final de la reserva del equipo -->
+        <div class="row">
+            <div class="col-xl-7 o-card-datePicker">
+                <div class="form-group o-form">
+                    <div class="o-label-datepickerContainer">
+                        <h3 class="o-label-datepicker">Desde</h3>
+                    </div>
+                    <div class="input-group o-dateGroup">
+                        <div class="input-group-addon o-addon">
+                            <img class="o-icondatePicker" src="resources/datePicker.png" alt="icono de calendario">
+                        </div>
+                            <input class="form-control datePicker o-formInput o-formFont" id="datePicker" name="datePicker" type="datetime-local" value="" placeholder="Inicio de reserva"/>
+                    </div>
+                    <div class="o-label-datepickerContainer">
+                        <h3 class="o-label-datepicker"></br></br>Hasta</h3>
+                    </div>
+                    <div class="input-group o-dateGroup">
+                        <div class="input-group-addon o-addon">
+                            <img class="o-icondatePicker" src="resources/datePicker.png" alt="icono de calendario">
+                        </div>
+                            <input type="datetime-local" name="datePicker" id="datePicker" value="" class="form-control datePicker o-formFont o-formInput" placeholder="Fin de reserva">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón realizar reserva -->
+        
+        <div class="row o-reservebtn">
+            <button type="submit" class="btn btn-primary o-buttonForm" id="reservebtn3"  onclick="saveReserve()">Reservar</button>
+        </div>
+    </div>
     </div>
 
     <!-- Empieza el codigo del footer NO TOCAR -->
