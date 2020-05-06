@@ -44,6 +44,8 @@ html {
     position: relative;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
 }
 .o-header a:after {
 	content: "";
@@ -52,7 +54,7 @@ html {
 	background-color: #9e0b0f;
 	width: 0;
 	left: 50%;
-	bottom: 0;
+    bottom: 0;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
 	transform: translateX(-50%);
@@ -149,10 +151,11 @@ html {
     padding: 2rem;
     margin: 7rem 8rem 2rem 8rem;
     width: 81%;
+    
 }
 /*Estilos de la barra de separacion*/
 .o-hr{
-    border: 1px solid #9e0b0f;
+    border: 1px solid #961a1d;
     width: 100%;
     margin: 0em 0 2rem 0;
 }
@@ -167,7 +170,7 @@ html {
 }
 /*Estilo del boton de la card*/
 .o-Button{
-    margin: 0;
+    margin: 0.5rem 0rem;
     min-width: 4rem;
     padding: 0 0;
     border-radius: 30px;
@@ -175,8 +178,8 @@ html {
     display: inline-block;
     font-family: "Roboto","Helvetica Neue",Arial,sans-serif;
     font-size: 16px;
-    color: #ae002d;
-    border: 2px solid #ae002d;
+    color: #961a1d;
+    border: 2px solid #961a1d;
     font-weight: 700;
     line-height: 1.5;
     box-shadow: none;
@@ -188,10 +191,13 @@ html {
 }
 .o-Button:hover, .o-Button:focus, .o-Button:disabled, .o-Button:not(:disabled):not(.disabled).active, .o-Button:not(:disabled):not(.disabled):active {
     color: #fff;
-    background-color:#ae002d;
-    border-color: #ae002d;
-    outline: none;
+    background-color:#961a1d;
+    border-color: #961a1d;
+    outline:none !important;
+    outline-width: 0 !important;
     box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
 }
 /* alineacion y ancho de la tabla  */
 .o-schedule{
@@ -200,6 +206,11 @@ html {
 
  }
 /* estilos de la tabla */
+table{
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+}
 th{ 
     font-family: 'Montserrat';
     font-weight: 80px;
@@ -225,6 +236,61 @@ td{
     font-size: 1.8rem;
     margin: 1rem 0rem 2rem 1rem;
     color: #000000;
+}
+
+.o-text1{
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    text-align: center;
+    color: #631213; 
+   
+}
+.o-textinconsistency{
+    font-size: 15px;
+    font-family: 'Montserrat';
+    color: #666666;
+    margin-bottom: 0;
+}
+
+.o-buttonsave{
+    font-size: 15px;
+    font-family: 'Montserrat';
+    background-color: #961a1d;
+    border-color: #961a1d;
+    color: #fff;
+}
+.o-buttonclose{
+    font-size: 15px;
+    font-family: 'Montserrat';
+    border:1px solid #961a1d;
+    background-color: white;
+    color: #961a1d;
+}
+
+.o-buttonsave:hover,  .o-buttonsave:focus, .o-buttonsave:disabled, .o-buttonsave:not(:disabled):not(.disabled).active, .o-buttonsave:not(:disabled):not(.disabled):active  {
+    color: #fff;
+    background-color:black;
+    border-color: black;
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.o-buttonclose:hover,  .o-buttonclose:focus, .o-buttonclose:disabled, .o-buttonclose:not(:disabled):not(.disabled).active, .o-buttonclose:not(:disabled):not(.disabled):active {
+    color: black;
+    background-color: #cccccc;
+    border-color: #cccccc;
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.o-ubication{
+    width:100%;
+    overflow-x:scroll;
 }
 
 
@@ -255,4 +321,61 @@ td{
     font-size: .9rem;
     margin: 3rem 0rem 3rem 0rem;
     color: white;
+}
+
+/*Responsive*/
+@media screen and (max-width:1000px){
+    /*Estilos del contenedor de links*/
+    .o-navbar{
+        margin: 0rem;
+    }
+    /*Estilos de la marca*/
+    .o-brand{
+        width: 20%;
+        margin: 0rem;
+        height: 3rem;
+    }
+
+    .o-header{
+        padding: 0rem 1rem;
+    }
+    .o-bodyContainer{
+        padding: 0.5rem;
+        margin: 5rem 0rem;
+        width: 100%;
+    }
+    .o-card{
+        min-width: 100%;
+    }
+    
+    
+}
+
+/*Responsive*/
+@media screen and (max-width:500px){
+    /*Estilos del contenedor de links*/
+    .o-navbar{
+        margin: 0rem;
+    }
+    /*Estilos de la marca*/
+    .o-brand{
+        width: 40%;
+        margin: 0rem;
+        height: 3rem;
+    }
+    .o-header{
+        padding: 0rem 1rem;
+    }
+    .o-containerFooter{
+        display: none;
+    }
+    .o-logo{
+        width: 50%;
+    }
+    table {
+        overflow-x: 90%;
+      }
+    .o-header a{
+        justify-content: flex-start;
+    }
 }

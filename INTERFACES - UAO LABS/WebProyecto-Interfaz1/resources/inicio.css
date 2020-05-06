@@ -49,7 +49,7 @@ html {
 	content: "";
 	position: absolute;
 	height: 2px;
-	background-color: #9e0b0f;
+	background-color: #961a1d;
 	width: 0;
 	left: 50%;
 	bottom: 0;
@@ -60,7 +60,7 @@ html {
   	transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
 }
 .o-header a:hover{
-	color: #9e0b0f;
+	color: #961a1d;
 }
 .o-header a:hover:after {
 	width: 100%;
@@ -84,7 +84,7 @@ html {
     content: "";
 	position: absolute;
 	height: 2px;
-	background-color: #9e0b0f;
+	background-color: #961a1d;
 	width: 0;
 	left: 50%;
 	bottom: 0;
@@ -96,7 +96,7 @@ html {
 }
 
 .dropbtn:hover{
-    color: #9e0b0f;
+    color: #961a1d;
 }
 .dropbtn:hover:after{
     width: 100%;
@@ -152,7 +152,7 @@ html {
 }
 /*Estilos de la barra de separacion*/
 .o-hr{
-    border: 1px solid #9e0b0f;
+    border: 1px solid #961a1d;
     width: 100%;
     margin: 0em 0 2rem 0;
 }
@@ -240,8 +240,8 @@ html {
     display: inline-block;
     font-family: "Roboto","Helvetica Neue",Arial,sans-serif;
     font-size: 16px;
-    color: #ae002d;
-    border: 2px solid #ae002d;
+    color: #961a1d;
+    border: 2px solid #961a1d;
     font-weight: 700;
     line-height: 1.5;
     box-shadow: none;
@@ -252,8 +252,8 @@ html {
 }
 .o-Button:hover, .o-Button:focus, .o-Button:disabled, .o-Button:not(:disabled):not(.disabled).active, .o-Button:not(:disabled):not(.disabled):active {
     color: #fff;
-    background-color:#ae002d;
-    border-color: #ae002d;
+    background-color:#961a1d;
+    border-color: #961a1d;
     outline: none;
     box-shadow: none;
 }
@@ -339,6 +339,5 @@ html {
     .o-logo{
         width: 50%;
     }
-    
     
 }

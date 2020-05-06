@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="resources/misreservas.css" />
+    <script src="resources/misreservas.js"></script>
 </head>
 <body class= "o-body">
     <div class = "o-header sticky-top navbar">
@@ -60,8 +61,8 @@
                         <td>Grafica 1</td>
                         <td>Equipo #2</td>
                         <td>
-                            <button type="submit" class="btn btn-primary o-Button" id="loginbtn"> Cancelar</button>
-                            <button type="submit" class="btn btn-primary o-Button" id="loginbtn"> Reprogramar</button>
+                            <a type="button" href="#Inconsistency" data-toggle = "modal" target="_blank" class="btn btn-primary o-Button" id="loginbtn" onclick="deleteRow(this)">Cancelar</a>
+                            <button type="submit"class="btn btn-primary o-Button" id="loginbtn"> Reprogramar</button>
                         </td>
                     </tr>
                         <td>Viernes 8 de Mayo</td>
@@ -69,17 +70,7 @@
                         <td>Grafica 1</td>
                         <td>Equipo #2</td>
                         <td>
-                            <button type="submit" class="btn btn-primary o-Button" id="loginbtn"> Cancelar</button>
-                            <button type="submit" class="btn btn-primary o-Button" id="loginbtn"> Reprogramar</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Viernes 8 de Mayo</td>
-                        <td>8:30 - 12:00</td>
-                        <td>Grafica 1</td>
-                        <td>Equipo #2</td>
-                        <td>
-                            <button type="submit" class="btn btn-primary o-Button" id="loginbtn"> Cancelar</button>
+                            <a type="button" href="#Inconsistency" data-toggle = "modal" target="_blank" class="btn btn-primary o-Button" id="loginbtn" onclick="deleteRow(this)">Cancelar</a>
                             <button type="submit" class="btn btn-primary o-Button" id="loginbtn"> Reprogramar</button>
                         </td>
                     </tr>
@@ -89,7 +80,7 @@
                         <td>Grafica 1</td>
                         <td>Equipo #2</td>
                         <td>
-                            <a type="button" href="#Inconsistency" data-toggle = "modal" target="_blank" class="btn btn-primary o-Button" id="loginbtn">Cancelar</a>
+                            <a type="button" href="#Inconsistency" data-toggle = "modal" target="_blank" class="btn btn-primary o-Button" id="loginbtn" onclick="deleteRow(this)">Cancelar</a>
                             <button type="submit" class="btn btn-primary o-Button" id="loginbtn"> Reprogramar</button>
                         </td>
                     </tr>
@@ -99,30 +90,11 @@
                         <td>Grafica 1</td>
                         <td>Equipo #2</td>
                         <td>
-                            <button type="submit" class="btn btn-primary o-Button" id="loginbtn"> Cancelar</button>
+                            <a type="button" href="#Inconsistency" data-toggle = "modal" target="_blank" class="btn btn-primary o-Button" id="loginbtn" onclick="deleteRow(this)">Cancelar</a>
                             <button type="submit" class="btn btn-primary o-Button" id="loginbtn"> Reprogramar</button>
                         </td>
-                  </tr>
-                  <tr>
-                    <td>Viernes 8 de Mayo</td>
-                    <td>8:30 - 12:00</td>
-                    <td>Grafica 1</td>
-                    <td>Equipo #2</td>
-                    <td>
-                        <button type="submit" class="btn btn-primary o-Button" id="loginbtn"> Cancelar</button>
-                        <button type="submit" class="btn btn-primary o-Button" id="loginbtn"> Reprogramar</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Viernes 8 de Mayo</td>
-                    <td>8:30 - 12:00</td>
-                    <td>Grafica 1</td>
-                    <td>Equipo #2</td>
-                    <td>
-                        <button type="submit" class="btn btn-primary o-Button" id="loginbtn"> Cancelar</button>
-                        <button type="submit" class="btn btn-primary o-Button" id="loginbtn"> Reprogramar</button>
-                    </td>
-                  </tr>
+                    </tr>
+                    
                   </table>
             </div>
 
@@ -132,20 +104,19 @@
                         <div class="modal-content">
                         <!--Header modal-->
                             <div class="modal-header">
-                                <h2 class="modal-title o-text">Cancelar reserva</h2>
+                                <h2 class="modal-title o-text1">Cancelar reserva</h2>
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             </div>
                         <!--Contenido modal-->
                              <div class="modal-body">
                                 <div class="o-warnings">
-                                    <img class="o-imgWarning" src="resources/warning-01.png" alt="ícono de warning">
                                     <p class="o-textinconsistency">¿Esta seguro que desea continuar con la cancelacion de esta reserva?</p>
                                 </div>
                             </div>
                         <!--Footer modal-->   
                         <div class="modal-footer">
-                            <button type = "button" class="btn btn-primary o-Button" data-dismiss="modal">Cerrar</button>
-                            <button type = "button" class="btn btn-primary o-Button"data-dismiss="modal" onclick="feedbackSave()">Continuar</button>
+                            <button type = "button" class="btn btn-primary o-buttonclose" data-dismiss="modal">Cerrar</button>
+                            <button type = "button" class="btn btn-primary o-buttonsave"data-dismiss="modal" onclick="cancelar()">Continuar</button>
                         </div>
                         </div>
                     </div>
