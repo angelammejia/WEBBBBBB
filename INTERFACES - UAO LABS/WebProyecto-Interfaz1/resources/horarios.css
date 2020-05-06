@@ -150,6 +150,7 @@
     border-radius: 5px;
     font-family: 'Montserrat';
     font-size: 15px;
+    font-weight: 100px;
     color: #666666; 
 }
 /* label laboratorios */
@@ -161,22 +162,57 @@
     margin: 1.6rem;
     padding: 0.2rem;
 }
-/* alineacion y ancho de la tabla  */
- .o-schedule{
-    width: 100%;
-    text-align: left;
 
- }
  /* estilos de la tabla */
- table, td, th {
-    border: 1px solid black;
-    font-family: 'Montserrat';
-  }
+.o-schedule{
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
 
-.o-title-ubication{
+.tableContainer{
+    text-align: center;
+}
+
+th{ 
+    font-family: 'Montserrat';
+    font-weight: 80px;
+    background-color:  #631213;
+    color: #ffffff;
+    font-size: 14px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+td{ 
+    font-family: 'Montserrat';
+    font-weight: 410;
+    color: #000000;
+    font-size: 14px;
+    background-color:  #ebebeb;
+    border: 1px solid rgb(107, 107, 107);
+}
+
+table .empty {
+	background-color:  #ffffff;
+}
+
+.o-title-location{
     font-family: 'Montserrat';
     font-weight: 400;
-    font-size: 1.8rem;
-    margin: 1rem 0rem 2rem 1rem;
+    font-size: 1.5rem;
+    margin: 2.5rem auto 2rem auto;
     color: #000000;
+}
+
+.o-gotoreserve{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #631213; 
+    font-weight: 100%;
+    margin: 0 auto 2rem;
+}
+
+.o-gotoreserve:hover{
+    color: #000000;
+    font-weight: normal;
 }
