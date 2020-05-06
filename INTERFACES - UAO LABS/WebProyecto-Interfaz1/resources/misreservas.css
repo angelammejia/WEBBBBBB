@@ -10,7 +10,6 @@ html {
 }
 
 /*ESTILOS DEL NAVBAR*/
-
 /*Estilos del Navbar*/
 .o-header{
     min-width: 100%;
@@ -168,7 +167,20 @@ html {
     margin: 0rem 0rem 1rem 0rem;
     color: #000000;
 }
-/*Estilo del boton de la card*/
+
+
+/*TABLA*/
+ /*Contenedor de la tabla*/
+ .o-ubication{
+    width:100%;
+    overflow-x:scroll;
+}
+/* alineacion y ancho de la tabla  */
+.o-schedule{
+    width: 100%;
+    text-align: left;
+ }
+ /*Estilo del boton de la tabla*/
 .o-Button{
     margin: 0.5rem 0rem;
     min-width: 4rem;
@@ -199,17 +211,9 @@ html {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
 }
-/* alineacion y ancho de la tabla  */
-.o-schedule{
-    width: 100%;
-    text-align: left;
-
- }
 /* estilos de la tabla */
 table{
-    width: 100%;
-    margin: 1rem;
-    padding: 1rem;
+    width: 80%;
 }
 th{ 
     font-family: 'Montserrat';
@@ -217,12 +221,13 @@ th{
     background-color:  #631213;
     color: #ffffff;
     font-size: 14px;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid#000000;
     padding: 1rem;
+    text-align: center;
 }
-
 td{ 
     font-family: 'Montserrat';
+    text-align: center;
     font-weight: 410;
     color: #000000;
     font-size: 14px;
@@ -230,14 +235,8 @@ td{
     border: 1px solid rgb(107, 107, 107);
     padding: 1rem;
 }
-.o-title-ubication{
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 1.8rem;
-    margin: 1rem 0rem 2rem 1rem;
-    color: #000000;
-}
-
+/*POP UP*/
+/*Titulo del pop up*/
 .o-text1{
     font-family: 'Montserrat';
     font-size: 1.5rem;
@@ -245,13 +244,14 @@ td{
     color: #631213; 
    
 }
+/*Informacion del pop up*/
 .o-textinconsistency{
     font-size: 15px;
     font-family: 'Montserrat';
     color: #666666;
     margin-bottom: 0;
 }
-
+/*Boton continuar del pop up*/
 .o-buttonsave{
     font-size: 15px;
     font-family: 'Montserrat';
@@ -259,14 +259,6 @@ td{
     border-color: #961a1d;
     color: #fff;
 }
-.o-buttonclose{
-    font-size: 15px;
-    font-family: 'Montserrat';
-    border:1px solid #961a1d;
-    background-color: white;
-    color: #961a1d;
-}
-
 .o-buttonsave:hover,  .o-buttonsave:focus, .o-buttonsave:disabled, .o-buttonsave:not(:disabled):not(.disabled).active, .o-buttonsave:not(:disabled):not(.disabled):active  {
     color: #fff;
     background-color:black;
@@ -277,6 +269,14 @@ td{
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
 }
+/*Boton cerrar del pop up*/
+.o-buttonclose{
+    font-size: 15px;
+    font-family: 'Montserrat';
+    border:1px solid #961a1d;
+    background-color: white;
+    color: #961a1d;
+}
 .o-buttonclose:hover,  .o-buttonclose:focus, .o-buttonclose:disabled, .o-buttonclose:not(:disabled):not(.disabled).active, .o-buttonclose:not(:disabled):not(.disabled):active {
     color: black;
     background-color: #cccccc;
@@ -286,11 +286,6 @@ td{
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
-}
-
-.o-ubication{
-    width:100%;
-    overflow-x:scroll;
 }
 
 
@@ -339,16 +334,7 @@ td{
     .o-header{
         padding: 0rem 1rem;
     }
-    .o-bodyContainer{
-        padding: 0.5rem;
-        margin: 5rem 0rem;
-        width: 100%;
-    }
-    .o-card{
-        min-width: 100%;
-    }
-    
-    
+      
 }
 
 /*Responsive*/
@@ -374,8 +360,16 @@ td{
     }
     table {
         overflow-x: 90%;
+        width: 100%;
+        margin: 1rem;
+        padding: 1rem;
       }
     .o-header a{
         justify-content: flex-start;
     }
+    .o-bodyContainer{
+        padding: 0.5rem;
+        margin: 5rem 0rem;
+        width: 100%;
+    }  
 }
