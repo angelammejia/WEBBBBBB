@@ -172,7 +172,8 @@ a, a:hover, a:active{
     border-radius: 5px;
     font-family: 'Montserrat';
     font-size: 15px;
-    color: #666666; 
+    font-weight: 100px;
+    color: #666666;  
 }
 /* Estilos al texto de los combobox de las opciones de las salas  */
 .o-label-labs{
@@ -183,36 +184,22 @@ a, a:hover, a:active{
     margin: 1.6rem;
     padding: 0.2rem;
 }
-/* Estilos al contenedor de los combobox de las opciones de los equipos  */
-.o-comboBox-options-number{
-    background: rgb(255, 255, 255);
-    border: 2px solid #665f602f;
-    margin: 1.3rem 0.1rem 0.5rem;
-    padding: 0.2rem;
-    border-radius: 5px;
-    font-family: 'Montserrat';
-    font-size: 15px;
-    color: #666666;; 
-}
-/* Estilos al texto de los combobox de las opciones de los equipos  */
-.o-label-computers{
-    font-family: 'Montserrat';
-    font-weight: 100px;
-    color: #666666;
-    font-size: 15px;
-    margin: 1.6rem 0rem 0rem 0rem;
-    padding: 0.2rem;
-}
+
 /* Estilos a la imagen de la ubicación de equipos de X sala  */
-.o-reserve{
-    width: 44vw;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.o-computer{
+    width: 40%;
+    margin: 1rem 1rem 0.5rem 1.7rem;
+}
+.o-emptyspace{
+    background-color: white;
+}
+.form-check{
+    margin: 0.5rem 19%;
 }
 /* Estilos al botón de reservar  */
 .o-buttonForm{
-    width: 88%;
-    margin: 1rem;
+    width: 100%;
+    margin-top: 0.8rem;
     font-family: 'Montserrat';
     background-color: #961a1d;
     border-color: #961a1d;
@@ -239,7 +226,7 @@ a, a:hover, a:active{
     flex-direction: row;
 }
 .o-dateGroup{
-    margin: 2rem 0rem 2rem 0rem;
+    margin: 1rem 0rem 1rem 0rem;
 }
 .o-addon{
     display: flex; 
@@ -251,6 +238,17 @@ a, a:hover, a:active{
 /* Estilos al ícono del datePicker  */
 .o-icondatePicker{
     width: 50%;
+}
+.o-label-datepickerContainer{
+    width: 100%;
+    text-align: center;
+}
+.o-label-datepicker{
+    font-family: 'Montserrat';
+    font-weight: 100px;
+    color: #666666;
+    font-size: 15px;
+    margin: 1.5rem;
 }
 /* Estilos al contenedor de los datePicker  */
 .o-formInput{
